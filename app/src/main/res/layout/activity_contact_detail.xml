@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#B71C1C"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="18dp"
+        android:text="←  Chi tiết liên hệ"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="18dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#C62828">
+
+                    <TextView
+                        android:id="@+id/tvDetailAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textColor="@android:color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@+id/tvDetailName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trần Thị Bình"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/tvDetailPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0912345678"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#C62828"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFEBEE"
+                android:layout_marginBottom="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nhóm"
+                        android:textColor="#9E9E9E"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gia đình"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giới tính"
+                        android:textColor="#9E9E9E"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nữ"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú"
+                android:textColor="#9E9E9E"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDetailNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chị gái, hay gọi buổi tối"
+                android:textSize="16sp"
+                android:textColor="#424242"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFEBEE"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbDetailFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh dấu Yêu thích ★"
+                android:textStyle="bold"
+                android:textColor="#C62828" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="#2E7D32"
+        android:text="☎  Gọi điện"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#546E7A"
+        android:text="Quay lại danh sách"
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#C62828"
+        android:text="Xóa liên hệ"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+</LinearLayout>
